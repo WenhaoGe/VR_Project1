@@ -11,7 +11,7 @@
 
     <a-assets>
         <audio id="blip1" src="assets/horned_owl.wav"></audio>
-        <a-asset-item id="drone" src="assets/busterDrone.gltf">
+        <a-asset-item id="drone" src="assets/scene.gltf">
     </a-assets>
 
     <a-entity position="54 1.5 12">
@@ -36,7 +36,8 @@
 
     </a-entity>
 
-        <a-plane src="url(images/floor.jpg)" rotation="-90 0 0" width="150" height="150"  ></a-plane>
+    <!--Floor -->
+    <a-plane src="url(images/floor.jpg)" rotation="-90 0 0" position="24.929 0 -24.819" scale="150 150 1"></a-plane>
 
     <a-entity collada-model="assets/stormtrooper.dae" rotation="90 180 0" position="-30.168 -0.105 6" scale="2 2 2"></a-entity>
 
@@ -127,6 +128,25 @@
 
        <!-- cake-->
        <a-cylinder scale="2 1 2" position="-22.964 5.46 -3.393" src="url(images/cake.jpeg)"></a-cylinder>
+
+       <!--book shelf-->
+       <a-entity>
+           <a-box scale="13 0.3 5" position="26.792 12.712 31.941" src="url(images/_5.png)"></a-box>
+           <a-box scale="13 0.3 5" position="33.375 6.325 31.941" src="url(images/_5.png)" rotation="0 0 90"></a-box>
+           <a-box scale="13 0.3 5" position="20.072 6.491 31.941" src="url(images/_5.png)" rotation="0 0 90"></a-box>
+           <a-box scale="13 0.3 5" position="26.7 0.395 31.941" src="url(images/_5.png)"></a-box>
+           <a-box scale="13 0.3 5" position="26.7 5.24 31.941" src="url(images/_5.png)"></a-box>
+           <a-box scale="13 0.3 5" position="26.523 9.123 31.941" src="url(images/_5.png)"></a-box>
+           <a-box scale="13 0.3 13" position="26.523 6.342 34.432" src="url(images/_5.png)" rotation="90 0 0"></a-box>
+           <a-obj-model src="assets/Bookmodel.OBJ" mtl="assets/Bookmodel.MTL" position="21.901 6.801 30.536" scale="1 1 0.5" material="" rotation="90 90 0"></a-obj-model>
+           <a-obj-model src="assets/Bookmodel.OBJ" mtl="assets/Bookmodel.MTL" position="28.691 10.056 30.536" scale="1 1 0.5" material="" rotation="90 90 0"></a-obj-model>
+
+       </a-entity>
+
+
+       <a-gltf-model src="#drone" position="20.274 4.509 -3.795" animation-mixer="" rotation="0 180 0" scale="3 2 3" gltf-model="assets/scene.gltf"></a-gltf-model>
+
+
 
 
 </a-scene>
